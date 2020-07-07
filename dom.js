@@ -89,7 +89,7 @@ function questionResult(veredict) {
 
 function nextQuestion (){
 console.log(questionCounter)
-    if(questionCounter < 2) {
+    if(questionCounter < 10) {
         toogleClasses()
         newQuestion ()
     } else {
@@ -138,7 +138,7 @@ function startGame(){
     let flavorText 
     
     if (correctanswerCounter > 8) {
-        flavorText = "¡Felicidades! Tu conocimiento médico y sobre Pokémon son óptimos."
+        flavorText = "¡Felicidades! Tu conocimiento médico y sobre Pokémon son impresionantes."
         image.src = "img/winner.png"
     } else if (correctanswerCounter > 4) {
         flavorText = "Tienes una condición estable. Sigue practicando y aprendiendo. ¡Vuelve pronto!"
@@ -154,11 +154,11 @@ function startGame(){
                     <h1 class="font-black leading-none text-4xl md:text-5xl">Acertaste ${correctanswerCounter} de 10</h1>
                     <p class="text-sm p-3">${flavorText}</p>
                     <a target="_blank" href="https://twitter.com/intent/tweet?text=¿Sabes diferenciar entre Medicina y Pokémon? Yo acerté ${correctanswerCounter} de 10 preguntas. (link)">
-                    <button class="bg-transparent hover:bg-black text-white font-semibold hover:text-white py-2 px-4 text-2xl border border-white hover:border-transparent rounded-full" id="start">
+                    <button class="bg-transparent hover:bg-black text-white font-semibold hover:text-white py-2 px-4 text-2xl border border-white hover:border-transparent rounded-full">
                         Compartir resultados
                       </button>
                     </a>
-                      <button class="bg-transparent hover:bg-black text-white font-semibold hover:text-white py-2 px-4 text-2xl border border-white hover:border-transparent rounded-full" id="start">
+                      <button class="bg-transparent hover:bg-black text-white font-semibold hover:text-white py-2 px-4 text-2xl border border-white hover:border-transparent rounded-full" onClick="window.location.reload()">
                         Volver a jugar
                       </button>
                 </div>  
