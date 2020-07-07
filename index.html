@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="dist/compiled.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css">
+
+
+</head>
+<body class="bg-red-200 flex flex-col h-screen ">
+
+    <section class="bg-gray-200 w-full h-full m-auto text-center justify-center flex flex-col" id="questionbg">
+        <div class="bg-white rounded-full h-64 w-64 flex items-center justify-center m-auto text-5xl" id="circle">
+            <p class="animated bounceIn font-bold hidden">Title</p>
+            <img src="img/start.png" class="animated">
+        </div>
+        
+            <ol class="text-xs font-black mb-4 justify-center flex space-x-2 opacity-25 hidden" id="questionslist">
+                <li>•</li>
+                <li>•</li>
+                <li>•</li>
+                <li>•</li>
+                <li>•</li>
+                <li>•</li>
+                <li>•</li>
+                <li>•</li>
+                <li>•</li>
+                <li>•</li>
+            </ol>
+        
+    </section>
+    <section class="bg-gray-500 w-full h-full m-auto text-center justify-center flex-1 flex flex-col"> 
+        <div id="startinfo" class="">
+            <div class="h-64 text-5xl text-white flex">
+                <div class=" m-auto">
+                    <h1 class="font-black leading-none text-4xl md:text-5xl">¿Medicamento o Pokémon?</h1>
+                    <p class="text-sm p-3">Todo buen médico (o entrenador) sabe diferenciar entre un medicamento y un Pokémon ¿no?</p>
+                    <button class="bg-transparent hover:bg-black text-white font-semibold hover:text-white py-2 px-4 text-2xl border border-white hover:border-transparent rounded-full" id="start">
+                        Comenzar
+                      </button>
+                </div>  
+            </div>
+         </div>
+         <div id="endinfo" class="hidden">
+            
+            <!--End section-->
+
+            </div>
+         </div>
+        <div id="opciones" class="hidden">
+        <button class="bg-indigo-500 h-32 w-full text-5xl text-white" id="medicina">
+            Medicamento
+        </button>
+        <button class="bg-teal-500 h-32 w-full text-5xl text-white" id="pokemon">
+            Pokémon
+        </button>
+     </div>
+     <div id="resultado" class="hidden">
+        <div class="h-64 text-5xl text-white flex">
+            <div class=" m-auto">
+                <h1>¡Correcto!</h1>
+                <p class="text-sm p-3">ALGO ALGO ALGO ALGO ALGO ALGO ALGO ALGO ALGO ALGO</p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-2xl" id="next"> 
+                    SIGUIENTE
+                </button>
+            </div>  
+        </div>
+     </div>
+     <div id="final" class="hidden">
+        <div class="h-64 text-5xl text-white flex">
+            <div class=" m-auto">
+                <p class="text-sm">Tu resultado:</p>
+                <p class="text-4xl p-3">Acertaste xx/10</p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-2xl" id="next"> 
+                    SIGUIENTE
+                </button>
+            </div>  
+        </div>
+     </div>
+     
+    </section>
+    <footer class="bg-gray-900 p-1 text-white" >Footer</footer>
+    
+</body>
+
+<script src="data.js"></script>
+<script src="dom.js"></script>
+
+
+</html>
