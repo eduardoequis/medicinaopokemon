@@ -153,7 +153,7 @@ function startGame(){
                 <div class=" m-auto">
                     <h1 class="font-black leading-none text-4xl md:text-5xl">Acertaste ${correctanswerCounter} de 10</h1>
                     <p class="text-sm p-3">${flavorText}</p>
-                    <a target="_blank" href="https://twitter.com/intent/tweet?text=¿Sabes diferenciar entre Medicina y Pokémon? Yo acerté ${correctanswerCounter} de 10 preguntas. (link)">
+                    <a target="_blank" href="https://twitter.com/intent/tweet?text=¿Puedes diferenciar entre Medicamentos y Pokémon? Yo acerté ${correctanswerCounter} de 10: https://eduardoequis.github.io/medicinaopokemon/ ">
                     <button class="bg-transparent hover:bg-black text-white font-semibold hover:text-white py-2 px-4 text-2xl border border-white hover:border-transparent rounded-full">
                         Compartir resultados
                       </button>
