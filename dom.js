@@ -148,20 +148,23 @@ function startGame(){
         image.src = "img/lose.png"
     }
 
+    // hacer funcion que llame al boton de twitter
     let final_results = `
     <div class="h-64 text-5xl text-white flex">
-                <div class=" m-auto">
-                    <h1 class="font-black leading-none text-4xl md:text-5xl">Acertaste ${correctanswerCounter} de 10</h1>
-                    <p class="text-sm p-3">${flavorText}</p>
-                    <a target="_blank" href="https://twitter.com/intent/tweet?text=¿Puedes diferenciar entre Medicamentos y Pokémon? Yo acerté ${correctanswerCounter} de 10: https://eduardoequis.github.io/medicinaopokemon/ ">
-                    <button class="bg-transparent hover:bg-black text-white font-semibold hover:text-white py-2 px-4 text-2xl border border-white hover:border-transparent rounded-full">
-                        Compartir resultados
-                      </button>
-                    </a>
-                      <button class="bg-transparent hover:bg-black text-white font-semibold hover:text-white py-2 px-4 text-2xl border border-white hover:border-transparent rounded-full" onClick="window.location.reload()">
-                        Volver a jugar
-                      </button>
-                </div>  
+        <div class=" m-auto">
+            <h1 class="font-black leading-none text-4xl md:text-5xl">Acertaste ${correctanswerCounter} de 10</h1>
+            <p class="text-sm p-3">${flavorText}</p>
+            <div class="flex flex-col md:flex-row justify-center mx-6 my-2">
+                
+                <button class="finalButton hover:bg-black hover:text-white hover:border-transparent" onClick="openShareOption()">
+                    Compartir resultados
+                </button>
+   
+                <button class="finalButton hover:bg-black hover:text-white hover:border-transparent" onClick="window.location.reload()">
+                    Volver a jugar
+                </button>
+            </div>
+        </div>  
     `
    
     endinfo.innerHTML = final_results
@@ -172,4 +175,8 @@ function startGame(){
     console.log(image.classList)  
 
 
+}
+
+function openShareOption () {
+    window.open(`https://twitter.com/intent/tweet?text=¿Puedes diferenciar entre Medicamentos y Pokémon? Yo acerté ${correctanswerCounter} de 10: https://eduardoequis.github.io/medicinaopokemon/`)
 }
