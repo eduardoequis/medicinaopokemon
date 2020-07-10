@@ -1,8 +1,9 @@
 Trivia Game
-#¿Medicamento o Pokémon?
-Una trivia simple para diferenciar Pokémon y medicamentos. 
+# ¿Medicamento o Pokémon?
 
-[GitHub](http://github.com)
+Una trivia simple sobre diferenciar Pokémon y medicamentos. 
+
+[Jugar](https://eduardoequis.github.io/medicinaopokemon/)
 
 Creado con:
 * Tailwind - CSS
